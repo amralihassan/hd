@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HD Images</title>
+
+        <!-- bootstrap 5 css file-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- font awesome -->
+        <link rel="stylesheet" href="vendors/css/vendors.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <!-- fixed top bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/hd-images-logo1.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="" onclick="openNav()"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- normal -->
+                        <li class="nav-item hide-mobile">
+                            <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home"></i>
+                                Home</a>
+                        </li>
+
+                        <li class="nav-item hide-mobile dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                <i class="fa fa-star"></i> Popular
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Categories -->
+                        <li class="nav-item hide-mobile dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                <i class="fa fa-folder-open"></i> Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item hide-mobile dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- mobile -->
+                        <div class="show-mobile">
+                            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-home social-font-lg"></i> Home</a>
+                            </li>
+
+                            <!-- Categories -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown">
+                                    <i class="fa fa-folder-open social-font-lg"></i> Categories
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-star social-font-lg "></i> Most Viewed</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-random social-font-lg"></i> Random images</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-cloud-upload social-font-lg"></i> Upload an images</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-pagelines social-font-lg"></i> About US</a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-lock social-font-lg"></i> Privacy Policy</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-paperclip social-font-lg"></i> Terms and Conditions</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-send social-font-lg"></i> Contact US</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-sign-in social-font-lg"></i> Login</a>
+                            </li>
+                        </div>
+                        <!-- end mobile -->
+
+                    </ul>
+                    <form class="d-flex hide-mobile">
+                        <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                        <button class="btn btn-default"><i class="fa fa-random"></i></button>
+                        <button class="btn btn-default text-danger btn-active" type="button">
+                            Upload <i class="fa fa-cloud-upload"></i></button>
+                        <a href="login.html" class="btn btn-default" type="button">Login</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- end top bar -->
+
+        <!-- page content -->
+        <div class="container">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <article class="article">
+                            <h3>
+                                RED SQUIRREL
+                                <i class="text-danger fa fa-trash">DELETED</i>
+                                <span onclick="like_btn()" id="like-panel" class="pull-right panel-box">
+                                    <a><i id="like-hand" class="fa fa-small fa fa-thumbs-o-up"></i></a>
+                                </span>
+                            </h3>
+                            <p class="article-meta">
+                                <span class="text-danger margin-right">
+                                    <i class="fa fa-user"></i> Published by:
+                                    <a href="@"> Admin </a>
+                                </span>
+                                <a class="text-success margin-right" href="#">
+                                    <i class="fa fa-folder-open"></i> Animals
+                                </a>
+                                <span class="text-muted margin-right">
+                                    <i class="fa fa-calendar-o"> </i>
+                                    February 7, 2015
+                                </span>
+                                <span class="text-primary margin-right">
+                                    <i class="fa fa-comments"></i>
+                                    2 <a href="#leave_comment">Comments</a>
+                                </span>
+                                <span class="text-success"><i class="fa fa-eye"></i>
+                                    3 views
+                                </span>
+                                <span class="text-danger margin-left">
+                                    <a>
+                                        <i class="fa fa-thumbs-o-up"> </i>
+                                        <span id="all-articles-likes"> 5 </span>
+                                    </a>
+                                </span>
+                            </p>
+
+                            <ul class="text-center panel-box-secondary" id="gallery_side_share_buttons">
+                                <li class="margin-small-bottom">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank"
+                                        title="Share on Facebook"
+                                        onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;">
+                                        <img width="42" height="42"
+                                            src="https://archive.org/download/1448461011SquareGooglePlus/1448460963_square-facebook.png"
+                                            border="0" alt="Facebook" />
+                                    </a>
+                                </li>
+                                <li class="margin-small-bottom">
+                                    <a href="javascript:void(0);"
+                                        onclick="window.open('https://api.addthis.com/oexchange/0.8/forward/google_plusone_share/offer?url=<?php echo current_url() ?>&pubid=ra-4f84c28748a515e5&ct=1&title=<?php echo $this->option->get('infront-article-message') . ' ' . $article->ar_title ?>','', 'width=590, height=350,left=400');"
+                                        target="_blank">
+                                        <img width="42" height="42"
+                                            src="https://archive.org/download/1448461011SquareGooglePlus/1448461011_square-google-plus.png"
+                                            border="0" alt="Google+" />
+                                    </a>
+                                </li>
+                                <li class="margin-small-bottom">
+                                    <a href="javascript:void(0);"
+                                        onclick="window.open('https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=<?php echo current_url() ?>&pubid=ra-4f84c28748a515e5&ct=1&title=<?php echo $this->option->get('infront-article-message') . ' ' . $article->ar_title ?>&pco=tbxnj-1.0','', 'width=590, height=350,left=400');"><img
+                                            width="42" height="42"
+                                            src="https://archive.org/download/1448461011SquareGooglePlus/1448461112_twitter-bird-logo-logotype.png"
+                                            border="0" alt="Twitter" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.addthis.com/bookmark.php?source=tbx32nj-1.0&v=300&url=echo current_url&pubid=ra-4f84c28748a515e5&ct=1&title=<?php echo $this->option->get('infront-article-message') . ' ' . $article->ar_title ?>&pco=tbxnj-1.0"
+                                        target="_blank"><img width="42" height="42"
+                                            src="https://archive.org/download/1448461587Addthis/1448461587_addthis.png"
+                                            border="0" alt="Addthis" /></a>
+                                </li>
+                            </ul>
+                            <div class="grid grid-width-1-1">
+                                <!--838X525-->
+                                <img class="show-img" src="images/lion.jpeg" alt="" />
+                                <p class="panel-box">
+                                    <b>Description: </b> Download Red Squirrel HD & Widescreen Animals & Birds Wallpaper
+                                    from the above resolutions. If you don't find the exact resolution you are looking
+                                    for, then go for 'Original' or higher resolution which
+                                    may fits perfect to your desktop.
+                                </p>
+                            </div>
+                            <div class="move-parent">
+                                <a id="prev-button" class="thumbnail " href="#">
+                                    <img style="height: 80px; width: 80px" src="https://via.placeholder.com/80"
+                                        alt="" />
+                                    <div class="thumbnail-caption">
+                                        Prev
+                                        <i class="fa fa-arrow-left"></i>
+                                    </div>
+                                </a>
+                                <a id="next-button" class="thumbnail pull-right" href="#">
+                                    <img style="height: 80px; width: 80px" src="https://via.placeholder.com/80"
+                                        alt="" />
+                                    <div class="thumbnail-caption">
+                                        Next
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <br />
+                            <div class="grid grid-width-1-1 margin-top margin-bottom">
+
+                            </div>
+
+                            <br />
+
+                            <div class="panel-box panel-primary" style="margin-top: 75px;">
+                                <p>
+                                    <a title="Title" href="#" download="#" class="btn btn-primary btn-large">
+                                        <i class="fa fa-cloud-download"></i> Download Original</a>
+                                </p>
+
+                                <p>
+                                    <b class="float-left margin-right">HD Resolutions:</b><br />
+                                    <a title="<?php echo $article->ar_title ?>"
+                                        href="<?php echo get_image($article->ar_main_thumb, '1280X720'); ?>"
+                                        download="<?php echo get_image($article->ar_main_thumb, '1280X720'); ?>"
+                                        class="btn btn-success">
+                                        <i class="icon-cloud-download"></i> 1280 x 720
+                                    </a>
+                                    <a title="<?php echo $article->ar_title ?>"
+                                        href="<?php echo get_image($article->ar_main_thumb, '1366X768'); ?>"
+                                        download="<?php echo get_image($article->ar_main_thumb, '1366X768'); ?>"
+                                        class="btn btn-success">
+                                        <i class="icon-cloud-download"></i> 1366 x 768
+                                    </a>
+                                    <a title="<?php echo $article->ar_title ?>"
+                                        href="<?php echo get_image($article->ar_main_thumb, '1600X900'); ?>"
+                                        download="<?php echo get_image($article->ar_main_thumb, '1600X900'); ?>"
+                                        class="btn btn-success">
+                                        <i class="icon-cloud-download"></i> 1600 x 900
+                                    </a>
+                                    <a title="<?php echo $article->ar_title ?>"
+                                        href="<?php echo get_image($article->ar_main_thumb, '1920X1080'); ?>"
+                                        download="<?php echo get_image($article->ar_main_thumb, '1920X1080'); ?>"
+                                        class="btn btn-success">
+                                        <i class="icon-cloud-download"></i> 1920 x 1080
+                                    </a>
+                                    <a title="<?php echo $article->ar_title ?>"
+                                        href="<?php echo get_image($article->ar_main_thumb, '2560X1440'); ?>"
+                                        download="<?php echo get_image($article->ar_main_thumb, '2560X1440'); ?>"
+                                        class="btn btn-success">
+                                        <i class="icon-cloud-download"></i> 2560 x 1440
+                                    </a>
+                                </p>
+                                <b class="float-left margin-right">Widescreen Resolutions:</b><br />
+                                <a title="<?php echo $article->ar_title ?>"
+                                    href="<?php echo get_image($article->ar_main_thumb, '1280X800'); ?>"
+                                    download="<?php echo get_image($article->ar_main_thumb, '1280X800'); ?>"
+                                    class="btn btn-success">
+                                    <i class="fa fa-cloud-download"></i> 1280 x 800</a>
+                                <a title="<?php echo $article->ar_title ?>"
+                                    href="<?php echo get_image($article->ar_main_thumb, '1440X900'); ?>"
+                                    download="<?php echo get_image($article->ar_main_thumb, '1440X900'); ?>"
+                                    class="btn btn-success">
+                                    <i class="fa fa-cloud-download"></i> 1440 x 900</a>
+                                <a title="<?php echo $article->ar_title ?>"
+                                    href="<?php echo get_image($article->ar_main_thumb, '1680X1050'); ?>"
+                                    download="<?php echo get_image($article->ar_main_thumb, '1680X1050'); ?>"
+                                    class="btn btn-success">
+                                    <i class="fa fa-cloud-download"></i> 1680 x 1050</a>
+                                <a title="<?php echo $article->ar_title ?>"
+                                    href="<?php echo get_image($article->ar_main_thumb, '1920X1200'); ?>"
+                                    download="<?php echo get_image($article->ar_main_thumb, '1920X1200'); ?>"
+                                    class="btn btn-success">
+                                    <i class="fa fa-cloud-download"></i> 1920 x 1200</a>
+                            </div>
+                            <br />
+
+                            <div>
+                                ads-article
+                            </div>
+
+
+                            <div class="panel margin-top">
+                                <h3>Modification</h3>
+                                <a href="<?php echo site_url('articles/edit_article/' . $article->ar_id) ?>"
+                                    class="button button-primary">
+                                    <i class="fa fa-edit"></i> Edit
+                                </a>
+                                <a href="<?php echo site_url('articles/delete_article/' . $article->ar_id) ?>"
+                                    class="button button-danger">
+                                    <i class="fa fa-trash-o"></i> Delete
+                                </a>
+                            </div>
+                            <br />
+
+
+                            <h3><i class="fa fa-tags"></i> Tags</h3>
+
+                            <p>
+
+                                <a class="badge-danger badge" href="#">
+                                    row
+                                </a>
+
+                            </p>
+                            <h2><i class="fa fa-comments-o"></i> Comments</h2>
+
+
+
+                        </article>
+                    </div>
+                    <div class="col-lg-3">
+                        <button href="#" class="btn btn-success btn-block mb-1">
+                            <i class="fa fa-cloud-download"></i> Download
+                        </button>
+                        <button href="#" class="btn btn-success btn-block">
+                            <i class="fa fa-cloud-download"></i> 2560 x 1440
+                        </button>
+                        <h3 class="text-muted mt-1 mb-1">Related</h3>
+                        <div class="grid grid-collapse hidden-medium hidden-small">
+
+                            <div class="mb-2" onclick="location.href='#'">
+                                <div class="overlay overlay-hover">
+                                    <img style="height: 100px" src="https://via.placeholder.com/150"
+                                        class="overlay-spin overlay-fade overlay-active" />
+                                </div>
+                            </div>
+
+                            <div class="mb-2" onclick="location.href='#'">
+                                <div class="overlay overlay-hover">
+                                    <img style="height: 100px" src="https://via.placeholder.com/150"
+                                        class="overlay-spin overlay-fade overlay-active" />
+                                </div>
+                            </div>
+
+                        </div>
+                        <br>
+                        <img src="images/goodbye.jpg" alt="" />
+                        <img src="images/goodbye.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end page content -->
+        <!-- end content -->
+        <script>
+            function openNav()
+            {
+                document.getElementById("navbarSupportedContent").style.width = "250px";
+            }
+
+            function closeNav()
+            {
+                document.getElementById("navbarSupportedContent").style.width = "0";
+            }
+        </script>
+        <script src="js/bootstrap.bundle.js"></script>
+    </body>
+
+</html>

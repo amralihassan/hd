@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HD Images</title>
+
+    <!-- bootstrap 5 css file-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="vendors/css/vendors.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- fixed top bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/hd-images-logo1.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="" onclick="openNav()" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class=" navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- normal -->
+                    <li class="nav-item hide-mobile">
+                        <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home"></i>
+                                Home</a>
+                    </li>
+
+                    <li class="nav-item hide-mobile dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fa fa-star"></i> Popular
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Categories -->
+                    <li class="nav-item hide-mobile dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fa fa-folder-open"></i> Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item hide-mobile dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                About
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- mobile -->
+                    <div class="show-mobile">
+                        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-home social-font-lg"></i> Home</a>
+                        </li>
+
+                        <!-- Categories -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fa fa-folder-open social-font-lg"></i> Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-star social-font-lg "></i> Most Viewed</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-random social-font-lg"></i> Random images</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-cloud-upload social-font-lg"></i> Upload an images</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-pagelines social-font-lg"></i> About US</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-lock social-font-lg"></i> Privacy Policy</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-paperclip social-font-lg"></i> Terms and Conditions</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-send social-font-lg"></i> Contact US</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-sign-in social-font-lg"></i> Login</a>
+                        </li>
+                    </div>
+                    <!-- end mobile -->
+
+                </ul>
+                <form class="d-flex hide-mobile">
+                    <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                    <button class="btn btn-default"><i class="fa fa-random"></i></button>
+                    <button class="btn btn-default text-danger btn-active" type="button">
+                            Upload <i class="fa fa-cloud-upload"></i></button>
+                    <a href="login.html" class="btn btn-default" type="button">Login</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end top bar -->
+
+    <!-- page content -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-lg-9">
+                    <!-- pagination -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                            <li class="page-item"><a class="page-link" href="#">8</a></li>
+                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                    <ul>
+                        <li>
+                            <div class="mb-2">
+                                <div class="img-box">
+                                    <a href="show.html">
+                                        <img src="image.png" alt="" class="img-style">
+                                    </a>
+                                    <div class="img-title">SWAN LOVE</div>
+                                </div>
+                                <div class="post-margin-left mt-2">
+                                    <span class="text-primary">
+                                            <i class="fa fa-thumbs-o-up"></i> 0</span>
+                                    <span class="text-warning">
+                                            <i class="fa fa-eye"></i> 1 Views
+                                        </span>
+                                    <span class="text-muted"><i class="fa fa-comment-o"></i> 0 Comment
+                                        </span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="mb-2">
+                                <div class="img-box">
+                                    <a href="show.html">
+                                        <img src="image.png" alt="" class="img-style">
+                                    </a>
+                                    <div class="img-title">SWAN LOVE</div>
+                                </div>
+                                <div class="post-margin-left mt-2">
+                                    <span class="text-primary">
+                                            <i class="fa fa-thumbs-o-up"></i> 0</span>
+                                    <span class="text-warning">
+                                            <i class="fa fa-eye"></i> 1 Views
+                                        </span>
+                                    <span class="text-muted"><i class="fa fa-comment-o"></i> 0 Comment
+                                        </span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="mb-2">
+                                <div class="img-box">
+                                    <a href="show.html">
+                                        <img src="image.png" alt="" class="img-style">
+                                    </a>
+                                    <div class="img-title">SWAN LOVE</div>
+                                </div>
+                                <div class="post-margin-left mt-2">
+                                    <span class="text-primary">
+                                            <i class="fa fa-thumbs-o-up"></i> 0</span>
+                                    <span class="text-warning">
+                                            <i class="fa fa-eye"></i> 1 Views
+                                        </span>
+                                    <span class="text-muted"><i class="fa fa-comment-o"></i> 0 Comment
+                                        </span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-lg-3">
+                    <button href="#" class="btn btn-danger btn-block"><i class="fa fa-cloud-upload"></i> Upload
+                            Multiple</button>
+                    <h2 class="center full-width left-title"><i class="fa fa-thumbs-up"></i> top uploader</h2>
+                    <img src="images/goodbye.jpg" alt="">
+                    <img src="images/goodbye.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end page content -->
+    <!-- end content -->
+    <script>
+        function openNav() {
+            document.getElementById("navbarSupportedContent").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("navbarSupportedContent").style.width = "0";
+        }
+    </script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
