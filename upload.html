@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- bootstrap 5 css file-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="vendors/css/vendors.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- fixed top bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/hd-images-logo1.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="" onclick="openNav()"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- normal -->
+            <li class="nav-item hide-mobile">
+              <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home"></i>
+                Home</a>
+            </li>
+
+            <li class="nav-item hide-mobile dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                <i class="fa fa-star"></i> Popular
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <li><a class="dropdown-item" href="#">
+                    <i class="fa fa-heart"></i>
+                    Most Likes
+                  </a>
+                </li>
+                <li><a class="dropdown-item" href="#">
+                    <i class="fa fa-calendar"></i>
+                    for the Week</a></li>
+                <li><a class="dropdown-item" href="#">
+                    <i class="fa fa-calendar"></i>
+                    for the Month</a></li>
+                <li><a class="dropdown-item" href="#">
+                    <i class="fa fa-calendar"></i>
+                    for the Year</a></li>
+                <li><a class="dropdown-item" href="#">
+                    <i class="fa fa-calendar"></i>
+                    All Time</a></li>
+              </ul>
+            </li>
+
+            <!-- Categories -->
+            <li class="nav-item hide-mobile dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                <i class="fa fa-folder-open"></i> Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fa fa-navicon"></i> All</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa fa-"></i>
+
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item hide-mobile dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">
+                    <i class="fa fa-pagelines"></i>
+                    About Us</a></li>
+                <li><a class="dropdown-item" href="#">
+                    <i class="fa fa-lock"></i>
+                    Privacy Policy</a></li>
+                <li><a class="dropdown-item" href="#">
+                    <i class="fa fa-paperclip"></i>
+                    Terms and Conditions</a></li>
+                <li><a class="dropdown-item" href="#">
+                    <i class="fa fa-paper-plane"></i>
+                    Contact US </a></li>
+              </ul>
+            </li>
+
+            <!-- mobile -->
+            <div class="show-mobile">
+              <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home social-font-lg"></i>
+                  Home</a>
+              </li>
+
+              <!-- Categories -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown">
+                  <i class="fa fa-folder-open social-font-lg"></i> Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-star social-font-lg "></i>
+                  Most Viewed</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-random social-font-lg"></i>
+                  Random images</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="upload.html"><i
+                    class="fa fa-cloud-upload social-font-lg"></i> Upload an images</a>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-pagelines social-font-lg"></i>
+                  About US</a>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-lock social-font-lg"></i>
+                  Privacy Policy</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-paperclip social-font-lg"></i>
+                  Terms and Conditions</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-send social-font-lg"></i>
+                  Contact US</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-sign-in social-font-lg"></i>
+                  Login</a>
+              </li>
+            </div>
+            <!-- end mobile -->
+
+          </ul>
+          <form class="d-flex hide-mobile">
+            <button class="btn btn-default"><i class="fa fa-search"></i></button>
+            <button class="btn btn-default"><i class="fa fa-random"></i></button>
+            <button class="btn btn-default text-danger btn-active" type="button">
+              Upload <i class="fa fa-cloud-upload"></i></button>
+            <a href="login.html" class="btn btn-default" type="button">Login</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- end top bar -->
+
+    <!-- page content -->
+    <div class="container">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="grid " data-grid-margin>
+              <div class="width-medium-3-4">
+                <article class="article">
+                  <h3>Add new HD Image</h3>
+                  <hr class="article-divider">
+                  <h3></h3>
+
+                  <div class="mb-2 panel-box">
+                    <label class="form-label" for="bridge_category_id">Category</label>
+
+                    <div class="">
+                      <select name='bridge_category_id' id="bridge_category_id" class="form-control">
+                        <option value=""> Select Category </option>
+                        <option value=""> xxx </option>
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="mb-2 panel-box">
+                    <img src="#" alt="" />
+                    <label class="form-label">Main Larg Photo</label>
+                    <label class="form-label"><i class="fa fa-image icon-large"></i></label>
+                    <input type="file" name="ar_main_photo" class="form-control" />
+
+                    <span class="alert-danger">
+
+                    </span>
+
+                  </div>
+                  <div class="mb-2 panel-box">
+                    <label class="form-label" for="ar_title">
+
+                    </label>
+                    <div class="">
+                      <input type='text' value='' name='ar_title' class='form-control' id='ar_title'
+                        placeholder="Image title" />
+                    </div>
+                  </div>
+                  <div class="mb-2 panel-box">
+                    <label class="form-label" for="ar_introduction">Description</label>
+
+                    <div class="">
+                      <textarea rows="8" name='ar_introduction' id='ar_introduction' class="form-control"
+                        placeholder="Introduction..."></textarea>
+                    </div>
+                  </div>
+                  <div class="mb-2 panel-box ">
+                    <label class="form-label">tags</label>
+                    <textarea rows="5" name="ar_tags" class="form-control"
+                      placeholder="Separate by , after every tag word"></textarea>
+                  </div>
+                  <div class=" mb-5 panel-box">
+                    <a href="#" class="btn btn-large btn-danger">
+                      Discard
+                    </a>
+                    <input type="hidden" name="submit_input" value="1" />
+                    <button class="btn pull-right btn-large btn-success">
+                      Publish
+                    </button>
+                  </div>
+                  </form>
+                </article>
+              </div>
+
+              <div class="width-medium-1-4">
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3">
+            <button href="#" class="btn btn-danger btn-block"><i class="fa fa-cloud-upload"></i> Upload
+              Multiple</button>
+            <h2 class="center full-width left-title"><i class="fa fa-thumbs-up"></i> top uploader</h2>
+            <img src="images/goodbye.jpg" alt="">
+            <img src="images/goodbye.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end content -->
+    <script>
+      function openNav()
+      {
+        document.getElementById("navbarSupportedContent").style.width = "250px";
+      }
+
+      function closeNav()
+      {
+        document.getElementById("navbarSupportedContent").style.width = "0";
+      }
+    </script>
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+
+</html>

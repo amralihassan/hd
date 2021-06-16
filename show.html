@@ -40,12 +40,24 @@
                                 <i class="fa fa-star"></i> Popular
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
+
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-heart"></i>
+                                        Most Likes
+                                    </a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-calendar"></i>
+                                        for the Week</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-calendar"></i>
+                                        for the Month</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-calendar"></i>
+                                        for the Year</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-calendar"></i>
+                                        All Time</a></li>
                             </ul>
                         </li>
 
@@ -56,12 +68,16 @@
                                 <i class="fa fa-folder-open"></i> Categories
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <a class="dropdown-item" href="#"><i class="fa fa-navicon"></i> All</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-"></i>
+
+                                    </a>
+                                </li>
                             </ul>
                         </li>
 
@@ -72,11 +88,18 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-pagelines"></i>
+                                        About Us</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-lock"></i>
+                                        Privacy Policy</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-paperclip"></i>
+                                        Terms and Conditions</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-paper-plane"></i>
+                                        Contact US </a></li>
                             </ul>
                         </li>
 
@@ -249,7 +272,7 @@
                                 <a id="next-button" class="thumbnail pull-right" href="#">
                                     <img style="height: 80px; width: 80px" src="https://via.placeholder.com/80"
                                         alt="" />
-                                    <div class="thumbnail-caption">
+                                    <div class="thumbnail-caption" style="margin-left: 24px;">
                                         Next
                                         <i class="fa fa-arrow-right"></i>
                                     </div>
@@ -357,7 +380,55 @@
                             </p>
                             <h2><i class="fa fa-comments-o"></i> Comments</h2>
 
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#home">Site comments (1)</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#profile">Facebook Comments</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <div>
+                                        <div>
+                                            <h2>Leave a Comment</h2>
 
+                                            <div class="uk-form uk-form-stacked">
+
+                                                <div class="uk-form-controls">
+                                                    <label for="comment_content" class="uk-form-label">Your
+                                                        Comment<span>*</span></label>
+                                                    <div class="col-lg-6 col-xs-12">
+                                                        <textarea id="comment_content" name="comment_content"
+                                                            class="form-control"></textarea>
+                                                    </div>
+
+                                                    <input type="hidden" name="ar_id" value="" />
+                                                </div>
+                                                <br />
+                                                <button class="btn btn-large btn-danger">send</button>
+                                                </form>
+                                            </div>
+
+                                            <div class="alert alert-warning mt-2">Please <a href="#">Sign
+                                                    in</a> to Post comments
+                                            </div>
+
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane " id="profile">
+                                    <div class="fb-comments" data-href="#" data-numposts="5" data-colorscheme="light">
+                                        <h2>Facebook Comment</h2>
+                                        <div class="col-lg-6 col-xs-12">
+                                            <textarea id="comment_content" name="comment_content"
+                                                class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </article>
                     </div>
@@ -406,6 +477,8 @@
                 document.getElementById("navbarSupportedContent").style.width = "0";
             }
         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
     </body>
 

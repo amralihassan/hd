@@ -1,178 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
 
-    <!-- bootstrap 5 css file-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="vendors/css/vendors.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+        <!-- bootstrap 5 css file-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="vendors/css/vendors.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-<body>
-    <!-- fixed top bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/hd-images-logo1.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="" onclick="openNav()" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <body>
+        <!-- fixed top bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/hd-images-logo1.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="" onclick="openNav()"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class=" navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- normal -->
-                    <li class="nav-item hide-mobile">
-                        <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home"></i>
+                <div class=" navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- normal -->
+                        <li class="nav-item hide-mobile">
+                            <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home"></i>
                                 Home</a>
-                    </li>
-
-                    <li class="nav-item hide-mobile dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                            <i class="fa fa-star"></i> Popular
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Categories -->
-                    <li class="nav-item hide-mobile dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                            <i class="fa fa-folder-open"></i> Categories
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item hide-mobile dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                About
-                            </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- mobile -->
-                    <div class="show-mobile">
-                        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html"><i
-                                        class="fa fa-home social-font-lg"></i> Home</a>
                         </li>
 
-                        <!-- Categories -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                                <i class="fa fa-folder-open social-font-lg"></i> Categories
+                        <li class="nav-item hide-mobile dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                <i class="fa fa-star"></i> Popular
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
+
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-heart"></i>
+                                        Most Likes
+                                    </a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-calendar"></i>
+                                        for the Week</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-calendar"></i>
+                                        for the Month</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-calendar"></i>
+                                        for the Year</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-calendar"></i>
+                                        All Time</a></li>
                             </ul>
                         </li>
 
-                        <li class="nav-item ">
-                            <a class="nav-link" aria-current="page" href="index.html"><i
+                        <!-- Categories -->
+                        <li class="nav-item hide-mobile dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                <i class="fa fa-folder-open"></i> Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#"><i class="fa fa-navicon"></i> All</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-"></i>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item hide-mobile dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-pagelines"></i>
+                                        About Us</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-lock"></i>
+                                        Privacy Policy</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-paperclip"></i>
+                                        Terms and Conditions</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-paper-plane"></i>
+                                        Contact US </a></li>
+                            </ul>
+                        </li>
+
+                        <!-- mobile -->
+                        <div class="show-mobile">
+                            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
+                                        class="fa fa-home social-font-lg"></i> Home</a>
+                            </li>
+
+                            <!-- Categories -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown">
+                                    <i class="fa fa-folder-open social-font-lg"></i> Categories
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
                                         class="fa fa-star social-font-lg "></i> Most Viewed</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" aria-current="page" href="index.html"><i
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
                                         class="fa fa-random social-font-lg"></i> Random images</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" aria-current="page" href="index.html"><i
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="upload.html"><i
                                         class="fa fa-cloud-upload social-font-lg"></i> Upload an images</a>
-                        </li>
+                            </li>
 
-                        <li class="nav-item ">
-                            <a class="nav-link" aria-current="page" href="index.html"><i
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
                                         class="fa fa-pagelines social-font-lg"></i> About US</a>
-                        </li>
+                            </li>
 
-                        <li class="nav-item ">
-                            <a class="nav-link" aria-current="page" href="index.html"><i
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
                                         class="fa fa-lock social-font-lg"></i> Privacy Policy</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" aria-current="page" href="index.html"><i
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
                                         class="fa fa-paperclip social-font-lg"></i> Terms and Conditions</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" aria-current="page" href="index.html"><i
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
                                         class="fa fa-send social-font-lg"></i> Contact US</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" aria-current="page" href="index.html"><i
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="index.html"><i
                                         class="fa fa-sign-in social-font-lg"></i> Login</a>
-                        </li>
-                    </div>
-                    <!-- end mobile -->
+                            </li>
+                        </div>
+                        <!-- end mobile -->
 
-                </ul>
-                <form class="d-flex hide-mobile">
-                    <button class="btn btn-default"><i class="fa fa-search"></i></button>
-                    <button class="btn btn-default"><i class="fa fa-random"></i></button>
-                    <button class="btn btn-default text-danger btn-active" type="button">
+                    </ul>
+                    <form class="d-flex hide-mobile">
+                        <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                        <button class="btn btn-default"><i class="fa fa-random"></i></button>
+                        <button class="btn btn-default text-danger btn-active" type="button">
                             Upload <i class="fa fa-cloud-upload"></i></button>
-                    <a href="login.html" class="btn btn-default" type="button">Login</a>
+                        <a href="login.html" class="btn btn-default" type="button">Login</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- end top bar -->
+
+        <!-- content -->
+        <div class="container">
+            <div class="wrapper-login">
+                <form class="form-signin">
+                    <input type="text" class="form-control mb-2" name="username" placeholder="Username" required=""
+                        autofocus="" />
+                    <input type="email" class="form-control mb-2" name="email" placeholder="Email address"
+                        required="" />
+                    <input type="password" class="form-control mb-2" name="password" placeholder="Password"
+                        required="" />
+                    <input type="password" class="form-control mb-2" name="c_password" placeholder="Confirm password"
+                        required="" />
+                    <button class="btn btn-primary btn-login btn-block mb-2" type="submit">Sign Up</button>
+
                 </form>
             </div>
         </div>
-    </nav>
-    <!-- end top bar -->
+        <!-- end content -->
+        <script>
+            function openNav()
+            {
+                document.getElementById("navbarSupportedContent").style.width = "250px";
+            }
 
-    <!-- content -->
-    <div class="container">
-        <div class="wrapper-login">
-            <form class="form-signin">
-                <input type="text" class="form-control mb-2" name="username" placeholder="Username" required="" autofocus="" />
-                <input type="email" class="form-control mb-2" name="email" placeholder="Email address" required="" />
-                <input type="password" class="form-control mb-2" name="password" placeholder="Password" required="" />
-                <input type="password" class="form-control mb-2" name="c_password" placeholder="Confirm password" required="" />
-                <button class="btn btn-primary btn-login btn-block mb-2" type="submit">Sign Up</button>
-
-            </form>
-        </div>
-    </div>
-    <!-- end content -->
-    <script>
-        function openNav() {
-            document.getElementById("navbarSupportedContent").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("navbarSupportedContent").style.width = "0";
-        }
-    </script>
-    <!-- bootstrap js file -->
-    <script src="js/bootstrap.bundle.js"></script>
-</body>
+            function closeNav()
+            {
+                document.getElementById("navbarSupportedContent").style.width = "0";
+            }
+        </script>
+        <!-- bootstrap js file -->
+        <script src="js/bootstrap.bundle.js"></script>
+    </body>
 
 </html>
